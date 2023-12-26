@@ -1,0 +1,23 @@
+% matrices        needs \usepackage{amsmath}
+$\begin{pmatrix} 1&0\\0&1 \end{pmatrix}$
+
+% nice tables        needs \usepackage{booktabs}
+\begin{table}[ht]
+\centering
+\caption{Caption.}
+\begin{tabular}{cl}
+\toprule
+\textbf{C1} & \textbf{C2} \\
+\midrule
+c11 & c12 \\
+\bottomrule
+\end{tabular}
+\label{tab:x}
+\end{table}
+
+% Matlab code        needs \usepackage{lstlisting}
+\begin{lstlisting}[language=Matlab] I = eye(3) \end{lstlisting}
+\lstset{language=Matlab}\lstinputlisting{filename.m} 
+
+% include pdf's
+\includepdf[pages=-]{filename.pdf}
